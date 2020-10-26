@@ -73,6 +73,7 @@
        <h5>&nbsp;&nbsp;
        		<a href = "register.jsp">註冊</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        		<a href = "login.jsp">登入</a>
+       		<br /><br /><br />
        </h5>
     </i>
 	</div>
@@ -102,11 +103,21 @@
 	</div>
 	
 	<div id="content">
-	&nbsp;貼文<hr>
-	&nbsp;貼文2<hr>
-	&nbsp;貼文3<hr>
-	&nbsp;貼文4<hr>
-	&nbsp;貼文5<hr>
+	帳號：
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input onkeyup="value=value.replace(/[\W]/g,‘‘) "
+	onbeforepaste="clipboardData.setData(‘text‘,clipboardData.getData(‘text‘).replace(/[^\d]/g,‘‘))">
+	<br />
+	
+	密碼：
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input onkeyup="value=value.replace(/[\W]/g,‘‘) "
+	onbeforepaste="clipboardData.setData(‘text‘,clipboardData.getData(‘text‘).replace(/[^\d]/g,‘‘))">
+	<br />
+
+	重新輸入密碼：
+	&nbsp;&nbsp;&nbsp;<input onkeyup="value=value.replace(/[\W]/g,‘‘) "
+	onbeforepaste="clipboardData.setData(‘text‘,clipboardData.getData(‘text‘).replace(/[^\d]/g,‘‘))">
+	<br />	
+	
 	</div>
 	
 	<div id="footer">
